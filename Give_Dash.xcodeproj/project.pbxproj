@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		624258D82B60138000680976 /* Give_DashApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624258D72B60138000680976 /* Give_DashApp.swift */; };
+		624258DA2B60138000680976 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624258D92B60138000680976 /* ContentView.swift */; };
+		624258DC2B60138400680976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624258DB2B60138400680976 /* Assets.xcassets */; };
+		624258DF2B60138400680976 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624258DE2B60138400680976 /* Preview Assets.xcassets */; };
+		624258E92B60138400680976 /* Give_DashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624258E82B60138400680976 /* Give_DashTests.swift */; };
+		624258F32B60138400680976 /* Give_DashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624258F22B60138400680976 /* Give_DashUITests.swift */; };
+		624258F52B60138400680976 /* Give_DashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624258F42B60138400680976 /* Give_DashUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		624258E52B60138400680976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624258CC2B60138000680976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 624258D32B60138000680976;
+			remoteInfo = Give_Dash;
+		};
+		624258EF2B60138400680976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 624258CC2B60138000680976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 624258D32B60138000680976;
+			remoteInfo = Give_Dash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		624258D42B60138000680976 /* Give_Dash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Give_Dash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		624258D72B60138000680976 /* Give_DashApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Give_DashApp.swift; sourceTree = "<group>"; };
+		624258D92B60138000680976 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		624258DB2B60138400680976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		624258DE2B60138400680976 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		624258E42B60138400680976 /* Give_DashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Give_DashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		624258E82B60138400680976 /* Give_DashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Give_DashTests.swift; sourceTree = "<group>"; };
+		624258EE2B60138400680976 /* Give_DashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Give_DashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		624258F22B60138400680976 /* Give_DashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Give_DashUITests.swift; sourceTree = "<group>"; };
+		624258F42B60138400680976 /* Give_DashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Give_DashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		624258D12B60138000680976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258E12B60138400680976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258EB2B60138400680976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		624258CB2B60138000680976 = {
+			isa = PBXGroup;
+			children = (
+				624258D62B60138000680976 /* Give_Dash */,
+				624258E72B60138400680976 /* Give_DashTests */,
+				624258F12B60138400680976 /* Give_DashUITests */,
+				624258D52B60138000680976 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		624258D52B60138000680976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				624258D42B60138000680976 /* Give_Dash.app */,
+				624258E42B60138400680976 /* Give_DashTests.xctest */,
+				624258EE2B60138400680976 /* Give_DashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		624258D62B60138000680976 /* Give_Dash */ = {
+			isa = PBXGroup;
+			children = (
+				624258D72B60138000680976 /* Give_DashApp.swift */,
+				624258D92B60138000680976 /* ContentView.swift */,
+				624258DB2B60138400680976 /* Assets.xcassets */,
+				624258DD2B60138400680976 /* Preview Content */,
+			);
+			path = Give_Dash;
+			sourceTree = "<group>";
+		};
+		624258DD2B60138400680976 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				624258DE2B60138400680976 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		624258E72B60138400680976 /* Give_DashTests */ = {
+			isa = PBXGroup;
+			children = (
+				624258E82B60138400680976 /* Give_DashTests.swift */,
+			);
+			path = Give_DashTests;
+			sourceTree = "<group>";
+		};
+		624258F12B60138400680976 /* Give_DashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				624258F22B60138400680976 /* Give_DashUITests.swift */,
+				624258F42B60138400680976 /* Give_DashUITestsLaunchTests.swift */,
+			);
+			path = Give_DashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		624258D32B60138000680976 /* Give_Dash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624258F82B60138400680976 /* Build configuration list for PBXNativeTarget "Give_Dash" */;
+			buildPhases = (
+				624258D02B60138000680976 /* Sources */,
+				624258D12B60138000680976 /* Frameworks */,
+				624258D22B60138000680976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Give_Dash;
+			productName = Give_Dash;
+			productReference = 624258D42B60138000680976 /* Give_Dash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		624258E32B60138400680976 /* Give_DashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624258FB2B60138400680976 /* Build configuration list for PBXNativeTarget "Give_DashTests" */;
+			buildPhases = (
+				624258E02B60138400680976 /* Sources */,
+				624258E12B60138400680976 /* Frameworks */,
+				624258E22B60138400680976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				624258E62B60138400680976 /* PBXTargetDependency */,
+			);
+			name = Give_DashTests;
+			productName = Give_DashTests;
+			productReference = 624258E42B60138400680976 /* Give_DashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		624258ED2B60138400680976 /* Give_DashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 624258FE2B60138400680976 /* Build configuration list for PBXNativeTarget "Give_DashUITests" */;
+			buildPhases = (
+				624258EA2B60138400680976 /* Sources */,
+				624258EB2B60138400680976 /* Frameworks */,
+				624258EC2B60138400680976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				624258F02B60138400680976 /* PBXTargetDependency */,
+			);
+			name = Give_DashUITests;
+			productName = Give_DashUITests;
+			productReference = 624258EE2B60138400680976 /* Give_DashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		624258CC2B60138000680976 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					624258D32B60138000680976 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					624258E32B60138400680976 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 624258D32B60138000680976;
+					};
+					624258ED2B60138400680976 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 624258D32B60138000680976;
+					};
+				};
+			};
+			buildConfigurationList = 624258CF2B60138000680976 /* Build configuration list for PBXProject "Give_Dash" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 624258CB2B60138000680976;
+			productRefGroup = 624258D52B60138000680976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				624258D32B60138000680976 /* Give_Dash */,
+				624258E32B60138400680976 /* Give_DashTests */,
+				624258ED2B60138400680976 /* Give_DashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		624258D22B60138000680976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624258DF2B60138400680976 /* Preview Assets.xcassets in Resources */,
+				624258DC2B60138400680976 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258E22B60138400680976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258EC2B60138400680976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		624258D02B60138000680976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624258DA2B60138000680976 /* ContentView.swift in Sources */,
+				624258D82B60138000680976 /* Give_DashApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258E02B60138400680976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624258E92B60138400680976 /* Give_DashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		624258EA2B60138400680976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				624258F32B60138400680976 /* Give_DashUITests.swift in Sources */,
+				624258F52B60138400680976 /* Give_DashUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		624258E62B60138400680976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 624258D32B60138000680976 /* Give_Dash */;
+			targetProxy = 624258E52B60138400680976 /* PBXContainerItemProxy */;
+		};
+		624258F02B60138400680976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 624258D32B60138000680976 /* Give_Dash */;
+			targetProxy = 624258EF2B60138400680976 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		624258F62B60138400680976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		624258F72B60138400680976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		624258F92B60138400680976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Give_Dash/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-Dash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		624258FA2B60138400680976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Give_Dash/Preview Content\"";
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-Dash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		624258FC2B60138400680976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-DashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Give_Dash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Give_Dash";
+			};
+			name = Debug;
+		};
+		624258FD2B60138400680976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-DashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Give_Dash.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Give_Dash";
+			};
+			name = Release;
+		};
+		624258FF2B60138400680976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-DashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Give_Dash;
+			};
+			name = Debug;
+		};
+		624259002B60138400680976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J6W9R2SZ22;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.academy.Give-DashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Give_Dash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		624258CF2B60138000680976 /* Build configuration list for PBXProject "Give_Dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624258F62B60138400680976 /* Debug */,
+				624258F72B60138400680976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624258F82B60138400680976 /* Build configuration list for PBXNativeTarget "Give_Dash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624258F92B60138400680976 /* Debug */,
+				624258FA2B60138400680976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624258FB2B60138400680976 /* Build configuration list for PBXNativeTarget "Give_DashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624258FC2B60138400680976 /* Debug */,
+				624258FD2B60138400680976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		624258FE2B60138400680976 /* Build configuration list for PBXNativeTarget "Give_DashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				624258FF2B60138400680976 /* Debug */,
+				624259002B60138400680976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 624258CC2B60138000680976 /* Project object */;
+}

@@ -9,17 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-            Image("GDbg")
-            VStack {
-                Image("GDlogo1")
-                
-                
+        TabView {
+        OrderView()
+            .tabItem {
+                Image(systemName: "cart")
+                Text("Order")
             }
-        }
-        .padding()
+        
+        DonateView()
+            .tabItem {
+                Image(systemName: "heart")
+                Text("Donate")
+            }
+        
+        DeliverView()
+            .tabItem {
+                Image(systemName: "bicycle")
+                Text("Deliver")
+            }
+        
+        ProfileView()
+            .tabItem {
+                Image(systemName: "person")
+                Text("Profile")
+            }
     }
 }
+}
+
 
 #Preview {
     ContentView()

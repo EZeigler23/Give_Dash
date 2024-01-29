@@ -16,9 +16,26 @@ var body: some View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(.all)
-                Text("Delivery View")
-                    .font(.title)
-                    .padding()
+                VStack{
+                    Group{
+                        Image("gdl2")
+                        Text("         Embark on a rewarding journey of community service. If you have a passion for lending a helping hand, start your application by clicking below to become a delivery professional.")
+                            .foregroundColor(.gDbcolor)
+                            .frame(alignment: .bottomTrailing)
+                    }.padding()
+                    
+                        
+                    NavigationLink(destination: driverView()) {
+                        Text(" Become A Driver")
+                            .padding()
+                            .foregroundColor(.gDbcolor)
+                            .background(Color.gdc2)
+                            .cornerRadius(10)
+                    }
+                
+                }.padding()
+            
+                
             }
         } .navigationBarTitle("Delivery", displayMode: .inline)
     }

@@ -25,12 +25,17 @@ struct DonateView: View {
                         .edgesIgnoringSafeArea(.all)
                     
                     VStack {
-                        CategoryView(categoryName: "Food", items: $foodItems)
-                        CategoryView(categoryName: "Clothing", items: $clothingItems)
-                        CategoryView(categoryName: "Water", items: $waterItems)
-                        CategoryView(categoryName: "Miscellaneous", items: $miscellaneousItems)
+                        Group{
+                            CategoryView(categoryName: "Food", items: $foodItems)
+                            CategoryView(categoryName: "Clothing", items: $clothingItems)
+                            CategoryView(categoryName: "Water", items: $waterItems)
+                            CategoryView(categoryName: "Miscellaneous", items: $miscellaneousItems)
+                        }.cornerRadius(10).padding()
+                            .cornerRadius(10)
+                            .frame(width: 410 ,height: 230)
+                        .cornerRadius(10)
                     }
-                    .frame(width: 390, height: 250, alignment: .bottomLeading)
+                    .frame(width: 390, height: 250, alignment: .bottom)
                     .bold()
                 
                 
@@ -113,7 +118,8 @@ struct CategoryView: View {
                     }
                     .padding(.leading)
                 }.listStyle(.plain)
-                    .frame(height: 50)
+                    .frame(height: 40)
+                    .cornerRadius(10)
                 
                 
                 TextField("Enter item", text: $newItem)

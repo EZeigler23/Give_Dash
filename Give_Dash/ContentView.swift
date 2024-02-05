@@ -38,36 +38,6 @@ struct ContentView: View {
 }
 
 
-struct DeliverView: View {
-var body: some View {
-    ZStack{
-        Image("GDbg")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .edgesIgnoringSafeArea(.all)
-        Text("Deliver View")
-            .font(.title)
-            .padding()
-    }
-}
-}
-
-struct ProfileView: View {
-var body: some View {
-    ZStack{
-        Image("GDbg")
-            .resizable()
-            .aspectRatio(contentMode: .fill)
-            .edgesIgnoringSafeArea(.all)
-        Text("Account Profile")
-            .font(.title)
-            .padding()
-    }
-}
-}
-
-
-
 #Preview {
     ContentView()
 }

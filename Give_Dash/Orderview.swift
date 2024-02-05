@@ -7,14 +7,27 @@ import SwiftUI
 import MapKit
 
 struct OrderView: View {
+    
     @State private var userLocationInput = ""
     @State private var region = MKCoordinateRegion(
-        center: CLLocationCoordinate2D(latitude: 42.3314, longitude: -83.0458), // Default: San Francisco
-        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
-    )
+        center: CLLocationCoordinate2D(latitude: 42.3314, longitude: -83.0458),
+        span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     @State private var isMapClicked = false
 
-    var body: some View {
+private func updateMapLocation() {
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(userLocationInput) { (placemarks, error) in
+            if let error = error {
+                print("Location error: \(error.localizedDescription)")
+            } else if let placemark = placemarks?.first {
+                region.center = placemark.location?.coordinate ?? region.center
+            } else {
+                print("No places found.")
+            }
+        }
+    }
+var body: some View {
+    
         NavigationView {
             ScrollView{
                 ZStack {
@@ -40,7 +53,7 @@ struct OrderView: View {
                                 }
                         }
                         
-                        TextField("Enter location (e.g., city or address)", text: $userLocationInput, onCommit: {
+                        TextField("Enter location (city or address)", text: $userLocationInput, onCommit: {
                             updateMapLocation()
                         })
                         .textFieldStyle(RoundedBorderTextFieldStyle())
@@ -76,21 +89,6 @@ struct OrderView: View {
                     .bold()
                     .background(Color.gDbcolor1)
                 }
-            }
-        }
-    }
-    private func updateMapLocation() {
-        let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(userLocationInput) { (placemarks, error) in
-            if let error = error {
-                // Handle geocoding error
-                print("Location error: \(error.localizedDescription)")
-            } else if let placemark = placemarks?.first {
-                // Update map region with the coordinates from the geocoded location
-                region.center = placemark.location?.coordinate ?? region.center
-            } else {
-                // Handle no results found
-                print("No results found.")
             }
         }
     }

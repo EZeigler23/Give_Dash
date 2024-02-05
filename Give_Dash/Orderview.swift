@@ -89,12 +89,14 @@ struct OrderView: View {
                 // Update map region with the coordinates from the geocoded location
                 region.center = placemark.location?.coordinate ?? region.center
             } else {
+                
+                
+                }
                 // Handle no results found
                 print("No results found.")
             }
         }
     }
-}
 
 struct OrderView_Previews: PreviewProvider {
     static var previews: some View {

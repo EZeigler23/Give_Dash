@@ -33,6 +33,12 @@ struct ContentView: View {
                 Image(systemName: "person")
                 Text("Profile")
             }
+            
+            }.onAppear() {
+                UITabBar.appearance()
+                    .backgroundColor = .gdcgreen
+                    
+            
     }
 }
 }

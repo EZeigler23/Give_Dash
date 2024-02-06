@@ -73,7 +73,7 @@ struct GroceryListView: View {
                         
                             .navigationBarTitle("Place Order", displayMode: .inline)
                     }.frame(height: 545)
-                    
+
                 }
                 
                 

@@ -27,6 +27,7 @@ var body: some View {
                         
                     NavigationLink(destination: driverView()) {
                         Text(" Become A Driver")
+                            .bold()
                             .padding()
                             .foregroundColor(.gDbcolor)
                             .background(Color.gdc2)

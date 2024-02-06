@@ -50,9 +50,10 @@ struct DonateView: View {
                         isPopoverPresented.toggle()
                     }) {
                         Text("Make Donation")
+                            .bold()
                             .padding()
-                            .foregroundColor(.white)
-                            .background(Color.gDbcolor)
+                            .foregroundColor(.gDbcolor)
+                            .background(Color.gdc2)
                             .cornerRadius(10)
                             .padding()
                     }
@@ -146,7 +147,7 @@ struct CategoryView: View {
                         Text("Save")
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.blue)
+                            .background(Color.gDbcolor)
                             .cornerRadius(10)
                     }
                     .padding()

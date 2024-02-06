@@ -52,21 +52,25 @@ var body: some View {
                                     isMapClicked.toggle()
                                 }
                         }
-                        
-                        TextField("Enter location (city or address)", text: $userLocationInput, onCommit: {
-                            updateMapLocation()
-                        })
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                        .multilineTextAlignment(.center)
-                        .autocapitalization(.words)
-                        .padding(.horizontal)
-                        .keyboardType(.webSearch) // Allow "Return" key on the keyboard
-                        
-                        Button("Enter") {
-                            updateMapLocation()
+                        HStack{
+                            
+                            TextField("Enter location (city or address)", text: $userLocationInput, onCommit: {
+                                updateMapLocation()
+                            })
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding()
+                            .multilineTextAlignment(.center)
+                            .autocapitalization(.words)
+                            .padding(.horizontal)
+                            .keyboardType(.webSearch) // Allow "Return" key on the keyboard
+                            
+                            Button("Enter") {
+                                updateMapLocation()
+                            }  .padding()
+                                .foregroundColor(.white)
+                                .background(Color.gDbcolor)
+                                .cornerRadius(10)
                         }
-                        .padding()
                         
                         // Additional content for the OrderView can be added below the map
                         Text("Place your order!")
@@ -74,11 +78,12 @@ var body: some View {
                             .foregroundColor(.gDbcolor)
                             .padding()
                         
+                        
                         NavigationLink(destination: GroceryListView()) {
                             Text("Place Order")
                                 .padding()
-                                .foregroundColor(.white)
-                                .background(Color.gDbcolor)
+                                .foregroundColor(.gDbcolor)
+                                .background(Color.gdc2)
                                 .cornerRadius(10)
                         }
                         .padding()

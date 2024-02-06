@@ -18,7 +18,7 @@ struct GroceryListView: View {
                         .font(.title)
                         .padding()
                     
-                    // Add grocery list content and functionality here
+                  
                 }
                 .navigationBarTitle("Place Order", displayMode: .inline)
             }

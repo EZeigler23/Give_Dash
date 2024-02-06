@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroceryListView: View {
+struct GroceryListView2: View {
     var body: some View {
         ZStack{
             Image("GDbg")
@@ -83,6 +83,6 @@ struct GroceryListView: View {
     }
     
     #Preview {
-        GroceryListView()
+        GroceryListView2()
     }
     

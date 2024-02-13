@@ -20,7 +20,7 @@
 		62E8E07E2B726F6B0023A13A /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8E07D2B726F6B0023A13A /* GroceryList.swift */; };
 		62E8E0822B72725D0023A13A /* Toggle+CheckboxStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8E0812B72725D0023A13A /* Toggle+CheckboxStyle.swift */; };
 		62E8E0862B73C9A60023A13A /* ConfirmOrderReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8E0852B73C9A60023A13A /* ConfirmOrderReceipt.swift */; };
-		62E8E0882B7553D50023A13A /* DeliverOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8E0872B7553D50023A13A /* DeliverOrders.swift */; };
+		62E8E0882B7553D50023A13A /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E8E0872B7553D50023A13A /* Resources.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		62E8E07D2B726F6B0023A13A /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		62E8E0812B72725D0023A13A /* Toggle+CheckboxStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toggle+CheckboxStyle.swift"; sourceTree = "<group>"; };
 		62E8E0852B73C9A60023A13A /* ConfirmOrderReceipt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmOrderReceipt.swift; sourceTree = "<group>"; };
-		62E8E0872B7553D50023A13A /* DeliverOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliverOrders.swift; sourceTree = "<group>"; };
+		62E8E0872B7553D50023A13A /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 				626658562B6508170003493B /* groceryListView.swift */,
 				62E8E0812B72725D0023A13A /* Toggle+CheckboxStyle.swift */,
 				62E8E0852B73C9A60023A13A /* ConfirmOrderReceipt.swift */,
-				626658582B661F9A0003493B /* DonateView.swift */,
 				6266585E2B66400C0003493B /* DeliveryView.swift */,
 				62E8E07B2B67F08A0023A13A /* driverView.swift */,
-				62E8E0872B7553D50023A13A /* DeliverOrders.swift */,
+				62E8E0872B7553D50023A13A /* Resources.swift */,
 				626658602B6640860003493B /* ProfileView.swift */,
+				626658582B661F9A0003493B /* DonateView.swift */,
 				624258DB2B60138400680976 /* Assets.xcassets */,
 				624258DD2B60138400680976 /* Preview Content */,
 			);
@@ -171,7 +171,7 @@
 				62E8E07E2B726F6B0023A13A /* GroceryList.swift in Sources */,
 				62E8E0862B73C9A60023A13A /* ConfirmOrderReceipt.swift in Sources */,
 				626658592B661F9A0003493B /* DonateView.swift in Sources */,
-				62E8E0882B7553D50023A13A /* DeliverOrders.swift in Sources */,
+				62E8E0882B7553D50023A13A /* Resources.swift in Sources */,
 				62E8E07C2B67F08A0023A13A /* driverView.swift in Sources */,
 				624258D82B60138000680976 /* Give_DashApp.swift in Sources */,
 				626658572B6508180003493B /* groceryListView.swift in Sources */,

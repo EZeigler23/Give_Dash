@@ -27,6 +27,9 @@ struct GroceryListView: View {
     @State var isConfirmOrderShowing = false
     var body: some View {
         NavigationView {
+            Color(hex:"E2F1D2")
+                .ignoresSafeArea()
+                .overlay(
             VStack {
                 List {
                     ForEach(groceries.indices, id: \.self) { index in
@@ -45,7 +48,8 @@ struct GroceryListView: View {
                                     .tint(Color(hex: "263F56"))
                                 Stepper(value: $groceries[index].count, in: 0...10) {
                                     Text("Qty: \(groceries[index].count)")
-                                }
+                                }.background(Color.gdcgreen)
+
                             }
                         }
                     }
@@ -63,13 +67,14 @@ struct GroceryListView: View {
                         .cornerRadius(10)
                 }
                 .padding()
-               // .navigationBarTitle("Place Order", displayMode: .inline)
+                .navigationBarTitle("Menu", displayMode: .inline)
+                .bold()
             }
-        }
+        )}
         .popover(isPresented: $showingReceiptPopover) {
             // Display receipt popover
             ConfirmOrderReceipt(groceries: $groceries)
-        }   .ignoresSafeArea()
+        }  // .ignoresSafeArea()
     }
     
     // Binding for toggles to update grocery item count
@@ -97,8 +102,10 @@ struct ConfirmOrderReceipt: View {
     @State var isConfirmOrderShowing = false
     
     var body: some View {
-        // Display receipt with selected items and counts
+   
+        
         VStack(alignment: .leading) {
+            
             Text("Receipt")
                 .font(.title)
                 .fontWeight(.bold)
@@ -117,14 +124,15 @@ struct ConfirmOrderReceipt: View {
             })
         }.padding()
         
+        
             Button(action: {
                 isConfirmOrderShowing.toggle()
             }) {
                 Text("Confirm Order")
                     .bold()
                     .padding()
-                    .foregroundColor(.gDbcolor)
-                    .background(Color.gdc2) // Use any color you desire
+                    .foregroundColor(.white)
+                    .background(Color.gDbcolor) // Use any color you desire
                     .cornerRadius(10)
             }
             .padding()
@@ -142,4 +150,8 @@ struct ConfirmOrderReceipt: View {
 //            .padding()
 //        .padding()
     }
+}
+
+#Preview {
+    GroceryListView()
 }

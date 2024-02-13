@@ -29,7 +29,7 @@ struct ToggleCheckboxStyle: ToggleStyle {
         Button {
             configuration.isOn.toggle()
         } label: {
-            Image(systemName: configuration.isOn ? "checkmark.square.fill" : "checkmark.square")
+            Image(systemName: configuration.isOn ? "checkmark.square.fill" : "square")
                 .foregroundColor(configuration.isOn ? Color.orange : Color.gray) // Change color to orange once selected
         }
     }

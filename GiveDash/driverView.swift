@@ -62,11 +62,16 @@ struct newRegistration: View {
 
 struct driverView: View {
     @State private var registrationSaved = false
+    @State private var showPopover: Bool = false
+    
+    let popoverTexts = [
+        "Food insecurity is a systemic issue that can happen to anyone, not a personal failure",
+        "44 million people in the US face hunger, including 1 in 5 children in 2022",
+        "1 in 8 Americans are estimated to be food insecure."
+    ]
+    
     
     func saveRegistration() {
-        // Implement your logic to save the registration details here
-        
-        // Set registrationSaved to true to indicate that registration is saved
         registrationSaved = true
     }
     
@@ -75,25 +80,41 @@ struct driverView: View {
             Color(hex:"E2F1D2")
                 .ignoresSafeArea()
                 .overlay(
-                    
                     ScrollView ([.vertical]){
                         VStack{
                             HStack{
                                 Image("GDlogo1")
                                     .resizable()
+                                    .scaledToFit()
                                     .frame(width: 50, height: 50, alignment: .leading)
                                     .padding()
+                                
                                 Spacer()
-                                Image(systemName: "info")
-                                    .padding()
-                                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color(hex:"263F56"))
-                            }
-                            Spacer(minLength: 60)
+                                
+                                Button(action: {
+                                    // Toggle the visibility of the popover
+                                    showPopover.toggle()
+                                }) {
+                                    Image(systemName: "info.circle")
+                                        .font(.largeTitle)
+                                        .foregroundColor(Color(hex:"263F56"))
+                                }
                                 .padding()
-                            
-                    VStack { 
+                                .popover(isPresented: $showPopover, arrowEdge: .top) {
+                                    VStack {
+                                        ScrollView{
+                                            Text(popoverTexts.randomElement() ?? "") // Selecting a random text
+                                                .bold()
+                                                .padding()
+                                                .presentationCompactAdaptation(.popover)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                    VStack {
                         newRegistration()
                         Button("Save Registration") {
                             saveRegistration()
@@ -106,7 +127,7 @@ struct driverView: View {
                         .padding()
                         // Navigate back to ContentView if registration is saved
                         NavigationLink(
-                            destination: DeliverOrders(),
+                            destination: ResourcesView(),
                             isActive: $registrationSaved,
                             label: { EmptyView() }
                         )
@@ -114,15 +135,11 @@ struct driverView: View {
                 }
             }
             .navigationBarTitle("Driver Registration", displayMode: .inline)
+            .bold()
         )}
     }
 }
 
-struct ContentView2: View {
-    var body: some View {
-        Text("Welcome to ContentView")
-    }
-}
 
 struct driverView_Previews: PreviewProvider {
     static var previews: some View {

@@ -9,6 +9,14 @@ import SwiftUI
 import MapKit
 
 struct ConfirmOrderReceipt2: View {
+    @State private var showPopover: Bool = false
+    
+    let popoverTexts = [
+        "Food insecurity is a systemic issue that can happen to anyone, not a personal failure",
+        "44 million people in the US face hunger, including 1 in 5 children in 2022",
+        "1 in 8 Americans are estimated to be food insecure."
+    ]
+    
     @State private var userLocationInput = ""
     @State private var region = MKCoordinateRegion(
         center: CLLocationCoordinate2D(latitude: 42.3314, longitude: -83.0458),
@@ -27,28 +35,49 @@ private func updateMapLocation() {
             }
         }
     }
+    
+    @State var progress: Double = 0.0
+    let timer = Timer.publish(every: 0.4, on: .main, in: .common).autoconnect()
+    
     var body: some View {
         NavigationView{
             Color(hex:"E2F1D2")
                 .ignoresSafeArea()
                 .overlay(
-                    
                     ScrollView ([.vertical]){
                         VStack{
                             HStack{
                                 Image("GDlogo1")
                                     .resizable()
+                                    .scaledToFit()
                                     .frame(width: 50, height: 50, alignment: .leading)
-                                Spacer()
-                                Image(systemName: "info")
                                     .padding()
-                                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                                    .fontWeight(.bold)
-                                    .foregroundColor(Color(hex:"263F56"))
-                            }
-                            Spacer(minLength: 50)
+                                
+                                Spacer()
+                                
+                                Button(action: {
+                                    // Toggle the visibility of the popover
+                                    showPopover.toggle()
+                                }) {
+                                    Image(systemName: "info.circle")
+                                        .font(.largeTitle)
+                                        .foregroundColor(Color(hex:"263F56"))
+                                }
                                 .padding()
-                            
+                                .popover(isPresented: $showPopover, arrowEdge: .top) {
+                                    VStack {
+                                        ScrollView{
+                                            Text(popoverTexts.randomElement() ?? "") // Selecting a random text
+                                                .bold()
+                                                .padding()
+                                                .presentationCompactAdaptation(.popover)
+                                                .fixedSize(horizontal: false, vertical: true)
+                                                .multilineTextAlignment(.center)
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
                     VStack {
                         Text("Order Confirmed!").padding()
                             .fontWeight(.bold)
@@ -58,9 +87,9 @@ private func updateMapLocation() {
                             Map(coordinateRegion: $region)
                                 .frame(height: 200)
                                 .cornerRadius(16)
-                                .onTapGesture {
-                                    isMapClicked.toggle()
-                                }
+                                //.onTapGesture {
+                                  //  isMapClicked.toggle()
+                                //}
                         } else {
                             Map(coordinateRegion: $region)
                                 .frame(maxHeight: .infinity)
@@ -98,12 +127,12 @@ private func updateMapLocation() {
                         
                     }
                     
-                } .navigationBarTitle("Delivery", displayMode: .inline)
+                }
                 @State var progress: Double = 0.0
                 let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
                     
 
-                }
+                }.navigationBarTitle("Order", displayMode: .inline).bold()
             )}
         }
     }

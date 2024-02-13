@@ -10,7 +10,7 @@ struct ProfileView: View {
     @State private var name: String = ""
     @State private var address: String = ""
     @State private var password: String = ""
-    @State private var selectedAllergies: Set<String> = [] 
+    @State private var selectedAllergies: Set<String> = []
     @State private var showPopover: Bool = false
     let allergies = ["Eggs", "Soy", "Wheat", "Shellfish", "Milk & Dairy", "Tree Nut", "Peanuts", "Sesame", "Fish"]
     let popoverTexts = [
@@ -118,8 +118,9 @@ struct ProfileView: View {
                                 .background(Color.green)
                                 .cornerRadius(8)
                             }.padding()
-                        }.navigationBarTitle("Account Settings", displayMode: .inline)
+                        }
                     }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading) // Adjusted frame
+                        .navigationBarTitle("Account Profile", displayMode: .inline).bold()
                 )
         }
         .onAppear {

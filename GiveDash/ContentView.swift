@@ -23,10 +23,10 @@ struct ContentView: View {
                     Text("Deliver")
                 }
         
-        DonateView()
+        ResourcesView()
             .tabItem {
-                Image(systemName: "heart")
-                Text("Donate")
+                Image(systemName: "figure.2")
+                Text("Resources")
             }
         
         

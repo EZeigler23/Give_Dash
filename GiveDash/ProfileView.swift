@@ -14,9 +14,9 @@ struct ProfileView: View {
     @State private var showPopover: Bool = false
     let allergies = ["Eggs", "Soy", "Wheat", "Shellfish", "Milk & Dairy", "Tree Nut", "Peanuts", "Sesame", "Fish"]
     let popoverTexts = [
-        "Food insecurity is a systemic issue that can happen to anyone, not a personal failure",
+        "Food insecurity is a systemic issue that can happen to anyone, its not a personal failure.",
         "44 million people in the US face hunger, including 1 in 5 children in 2022",
-        "1 in 8 Americans are estimated to be food insecure."
+        "1 in 8 Americans are estimated to be food insecure.","Food production and distribution systems contribute to environmental degradation, including deforestation, greenhouse gas emissions, and loss of biodiversity, further exacerbating food insecurity in the long term.", "Food insecurity disproportionately affects vulnerable populations, including children, women, the elderly, and marginalized communities.","Economic instability, poverty, conflict, and climate change are among the primary factors contributing to food insecurity."," Food insecurity can lead to malnutrition, which in turn contributes to various health issues, including stunted growth, weakened immune systems, and higher susceptibility to diseases.","Prior to 2024, around 9% of the world's population was estimated to be undernourished, according to the Food and Agriculture Organization (FAO) of the United Nations"
     ]
     
     // UserDefaults key for storing profile data
@@ -94,14 +94,16 @@ struct ProfileView: View {
                                                     selectedAllergies.remove(allergy)
                                                 }
                                             }
-                                        )) {
+                                        ))
+                                        {
                                             Text(allergy)
                                                 .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                                                .background(selectedAllergies.contains(allergy) ? Color.green : Color.gray)
+                                                .background(selectedAllergies.contains(allergy) ? Color.gDbcolor : Color.gray)
                                                 .bold()
                                                 .foregroundColor(.white)
                                                 .cornerRadius(10)
                                                 .padding()
+                                                
                                         }
                                     }
                                 }
@@ -115,7 +117,7 @@ struct ProfileView: View {
                                 .bold()
                                 .frame(width: 180, height: 42)
                                 .foregroundColor(.white)
-                                .background(Color.green)
+                                .background(Color.gDbcolor)
                                 .cornerRadius(8)
                             }.padding()
                         }

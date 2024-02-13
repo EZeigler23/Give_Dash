@@ -67,14 +67,14 @@ struct GroceryListView: View {
                         .cornerRadius(10)
                 }
                 .padding()
-                .navigationBarTitle("Menu", displayMode: .inline)
+                .navigationBarTitle("Order Menu", displayMode: .inline)
                 .bold()
             }
         )}
         .popover(isPresented: $showingReceiptPopover) {
-            // Display receipt popover
+        
             ConfirmOrderReceipt(groceries: $groceries)
-        }  // .ignoresSafeArea()
+        }
     }
     
     // Binding for toggles to update grocery item count

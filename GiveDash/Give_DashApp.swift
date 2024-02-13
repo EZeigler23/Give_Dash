@@ -24,10 +24,14 @@ import SwiftUI
 //}
 
 @main
+
+
 struct Give_DashApp: App {
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }

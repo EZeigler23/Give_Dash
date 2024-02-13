@@ -17,13 +17,26 @@ struct DonateView: View {
 
     var body: some View {
         NavigationView {
-            ZStack {
-                ScrollView {
-                    Image("GDbg")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .edgesIgnoringSafeArea(.all)
+            Color(hex:"E2F1D2")
+                .ignoresSafeArea()
+                .overlay(
                     
+                    ScrollView ([.horizontal]){
+                        VStack{
+                            HStack{
+                                Image("GDlogo1")
+                                    .resizable()
+                                    .frame(width: 50, height: 50, alignment: .leading)
+                                Spacer()
+                                Image(systemName: "info")
+                                    .padding()
+                                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                                    .fontWeight(.bold)
+                                    .foregroundColor(Color(hex:"263F56"))
+                            }
+                            Spacer(minLength: 50)
+                                .padding()
+                            
                     VStack {
                         Group{
                             CategoryView(categoryName: "Food", items: $foodItems)
@@ -64,7 +77,7 @@ struct DonateView: View {
               }
             }
             .navigationBarTitle("Donate", displayMode: .inline)
-        }
+        )}
     }
 
     private func makeDonationPopup() -> some View {

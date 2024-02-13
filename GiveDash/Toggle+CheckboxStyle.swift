@@ -25,18 +25,18 @@ var rgb: UInt64 = 0
 }
 
 struct ToggleCheckboxStyle: ToggleStyle {
-    
     func makeBody(configuration: Configuration) -> some View {
         Button {
             configuration.isOn.toggle()
         } label: {
-            Image(systemName: "checkmark.square")
-                .symbolVariant(configuration.isOn ? .fill : .none)
+            Image(systemName: configuration.isOn ? "checkmark.square.fill" : "checkmark.square")
+                .foregroundColor(configuration.isOn ? Color.orange : Color.gray) // Change color to orange once selected
         }
-        .tint(Color(hex: "263F56"))
     }
 }
 
 extension ToggleStyle where Self == ToggleCheckboxStyle {
     static var checklist: ToggleCheckboxStyle { .init() }
 }
+
+

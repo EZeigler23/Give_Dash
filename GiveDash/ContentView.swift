@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+  
     var body: some View {
         TabView {
         OrderView()
@@ -15,6 +16,12 @@ struct ContentView: View {
                 Image(systemName: "cart")
                 Text("Order")
             }
+            
+            DeliverView()
+                .tabItem {
+                    Image(systemName: "bicycle")
+                    Text("Deliver")
+                }
         
         DonateView()
             .tabItem {
@@ -22,11 +29,6 @@ struct ContentView: View {
                 Text("Donate")
             }
         
-        DeliverView()
-            .tabItem {
-                Image(systemName: "bicycle")
-                Text("Deliver")
-            }
         
         ProfileView()
             .tabItem {

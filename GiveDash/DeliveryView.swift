@@ -10,13 +10,26 @@ import SwiftUI
 struct DeliverView: View {
 var body: some View {
     NavigationView{
-        ScrollView{
-            ZStack{
-                Image("GDbg")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .edgesIgnoringSafeArea(.all)
-                VStack{
+        Color(hex:"E2F1D2")
+            .ignoresSafeArea()
+            .overlay(
+                
+                ScrollView ([.vertical]){
+                    VStack{
+                        HStack{
+                            Image("")
+                                .resizable()
+                                .frame(width: 50, height: 50, alignment: .leading)
+                            Spacer()
+                            Image(systemName: "info")
+                                .padding()
+                                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                                .fontWeight(.bold)
+                                .foregroundColor(Color(hex:"263F56"))
+                        }
+                        Spacer(minLength: 50)
+                            .padding()
+                                        VStack{
                     Group{
                         Image("gdl2")
                         Text("         Embark on a rewarding journey of community service. If you have a passion for lending a helping hand, start your application by clicking below to become a delivery professional.")
@@ -39,7 +52,7 @@ var body: some View {
                 
             }
         } .navigationBarTitle("Delivery", displayMode: .inline)
-    }
+    )}
 }
 }
 

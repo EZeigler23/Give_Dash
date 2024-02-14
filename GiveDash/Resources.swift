@@ -25,7 +25,7 @@ struct ResourcesView: View {
     
     var body: some View {
         NavigationView{
-            Color(hex:"E2F1D2")
+            Color(.gdg)
                 .ignoresSafeArea()
                 .overlay(
                     ScrollView ([.vertical]){
@@ -45,7 +45,7 @@ struct ResourcesView: View {
                                 }) {
                                     Image(systemName: "info.circle")
                                         .font(.largeTitle)
-                                        .foregroundColor(Color(hex:"263F56"))
+                                        .foregroundColor(Color(.gDbcolor))
                                 }
                                 .padding()
                                 .popover(isPresented: $showPopover, arrowEdge: .top) {
@@ -54,10 +54,11 @@ struct ResourcesView: View {
                                             Text(popoverTexts.randomElement() ?? "") // Selecting a random text
                                                 .bold()
                                                 .padding()
+                                                .background(.gdcgreen2)
                                                 .presentationCompactAdaptation(.popover)
                                                 .fixedSize(horizontal: false, vertical: true)
                                                 .multilineTextAlignment(.center)
-                                        }
+                                        }.background(.gdcgreen2)
                                     }
                                 }
                             }
@@ -73,35 +74,35 @@ struct ResourcesView: View {
                                             .font(.title2)
                                             .frame(maxWidth: 371, maxHeight: .infinity, alignment: .leading)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                             .frame(maxWidth: 371, maxHeight: .infinity)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                         Link("Forgotten Harvest on the GO! - Pop-Up Pantries – Food Distribution", destination: URL(string: "https://forgottenharvest.galaxydigital.com/agency/detail/?agency_id=121232")!)
                                             .font(.title2)
                                             .frame(maxWidth: 371, maxHeight: .infinity, alignment: .leading)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                             .frame(maxWidth: 371, maxHeight: .infinity)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                         Link("Mobile Food Pantry Schedule for West Michigan", destination: URL(string: "https://www.feedwm.org/mobile-pantry-schedule/")!)
                                             .font(.title2)
                                             .frame(maxWidth: 371, maxHeight: .infinity, alignment: .leading)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                             .frame(maxWidth: 371, maxHeight: .infinity)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                     }.background(.gdcgreen)
                                 } else {
                                     // Collapsed content
                                     Group{
                                         Spacer()
-                                        Text("Pop Up Donation Drives").font(.title3)
+                                        Text("Pop Up Donation Drives").font(.title2)
                                             .frame(width: 300, height: 0, alignment: .center)
                                             .padding()
-                                            .foregroundStyle(Color(hex: "263F56"))
+                                            .foregroundStyle(Color(.gDbcolor))
                                             .frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                     }.background(.gdcgreen)
                                     
@@ -118,19 +119,19 @@ struct ResourcesView: View {
                                     ZStack{
                                         Rectangle()
                                             .frame(width: 371, height:42)
-                                            .foregroundColor(Color(hex:"263F56"))
+                                            .foregroundColor(Color(.gDbcolor))
                                             .cornerRadius(8)
                                         
                                         Text(isExpanded ? "See Less" : "See More")
                                             .foregroundColor(.white)
-                                        //  .padding()
+                                          //.padding()
                                             .frame(height: 42)
                                     }
                                 }
                                 
                             }
                             .frame(width: 371, height: isExpanded ? nil : 143)
-                            .background(Color(hex:"E2F1D2"))
+                            .background(Color(.gdcgreen))
                             .cornerRadius(8)
                             .padding()
                             
@@ -143,26 +144,26 @@ struct ResourcesView: View {
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                         .frame(maxWidth: 371, maxHeight: .infinity)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                     Link("State of Michigan Virtual Job Fairs", destination: URL(string: "https://www.michigan.gov/mdcs/state-employment/state-of-michigan-virtual-job-fairs")!)
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                         .frame(maxWidth: 371, maxHeight: .infinity)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                     Link("MI Talent Dashboard Job Search", destination: URL(string: "https://www.mitalent.org/job-seeker")!)
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                         .frame(maxWidth: 371, maxHeight: .infinity)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                 }.background(.gdcgreen)
                             } else {
                                 // Collapsed content
@@ -171,7 +172,7 @@ struct ResourcesView: View {
                                     Text("Job Fairs").font(.title)
                                         .frame(width: 300, height: 0, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                         .frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 }.background(.gdcgreen)
                                 
@@ -188,7 +189,7 @@ struct ResourcesView: View {
                                 ZStack{
                                     Rectangle()
                                         .frame(width: 371, height:42)
-                                        .foregroundColor(Color(hex:"263F56"))
+                                        .foregroundColor(Color(.gDbcolor))
                                         .cornerRadius(8)
                                     
                                     Text(isExpanded2 ? "See Less" : "See More")
@@ -206,17 +207,17 @@ struct ResourcesView: View {
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                     Link("Need Help plannig a trip?? Download 'WeOUT' and let us plan it for you", destination: URL(string: "https://testflight.apple.com/join/leDki443")!)
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                     Link("Wedding, Birthday Party, or any other special occasion?? Visit Exquisite Creations for all event/party necessities!", destination: URL(string: "https://exquisitecreationsservices.com")!)
                                         .font(.title2)
                                         .frame(maxWidth: 371, maxHeight: .infinity, alignment: .leading)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                 }.background(.gdcgreen)
                             } else {
                                 // Collapsed content
@@ -225,7 +226,7 @@ struct ResourcesView: View {
                                     Text("Other Resources").font(.title)
                                         .frame(width: 300, height: 0, alignment: .center)
                                         .padding()
-                                        .foregroundStyle(Color(hex: "263F56"))
+                                        .foregroundStyle(Color(.gDbcolor))
                                         .frame(width: 400, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                                 }.background(.gdcgreen)
                                 
@@ -242,7 +243,7 @@ struct ResourcesView: View {
                                 ZStack{
                                     Rectangle()
                                         .frame(width: 371, height:42)
-                                        .foregroundColor(Color(hex:"263F56"))
+                                        .foregroundColor(Color(.gDbcolor))
                                         .cornerRadius(8)
                                     
                                     Text(isExpanded3 ? "See Less" : "See More")

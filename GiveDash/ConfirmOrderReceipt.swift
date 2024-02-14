@@ -41,7 +41,7 @@ private func updateMapLocation() {
     
     var body: some View {
         NavigationView{
-            Color(hex:"E2F1D2")
+            Color(.gdg)
                 .ignoresSafeArea()
                 .overlay(
                     ScrollView ([.vertical]){
@@ -61,7 +61,7 @@ private func updateMapLocation() {
                                 }) {
                                     Image(systemName: "info.circle")
                                         .font(.largeTitle)
-                                        .foregroundColor(Color(hex:"263F56"))
+                                        .foregroundColor(Color(.gDbcolor))
                                 }
                                 .padding()
                                 .popover(isPresented: $showPopover, arrowEdge: .top) {
@@ -70,10 +70,11 @@ private func updateMapLocation() {
                                             Text(popoverTexts.randomElement() ?? "") // Selecting a random text
                                                 .bold()
                                                 .padding()
+                                                .background(.gdcgreen2)
                                                 .presentationCompactAdaptation(.popover)
                                                 .fixedSize(horizontal: false, vertical: true)
                                                 .multilineTextAlignment(.center)
-                                        }
+                                        }.background(.gdcgreen2)
                                     }
                                 }
                             }

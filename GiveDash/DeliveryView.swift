@@ -17,7 +17,7 @@ struct DeliverView: View {
     ]
 var body: some View {
     NavigationView{
-        Color(hex:"E2F1D2")
+        Color(.gdg)
             .ignoresSafeArea()
             .overlay(
                 ScrollView ([.vertical]){
@@ -37,7 +37,7 @@ var body: some View {
                             }) {
                                 Image(systemName: "info.circle")
                                     .font(.largeTitle)
-                                    .foregroundColor(Color(hex:"263F56"))
+                                    .foregroundColor(Color(.gDbcolor))
                             }
                             .padding()
                             .popover(isPresented: $showPopover, arrowEdge: .top) {
@@ -46,10 +46,11 @@ var body: some View {
                                         Text(popoverTexts.randomElement() ?? "") // Selecting a random text
                                             .bold()
                                             .padding()
+                                            .background(.gdcgreen2)
                                             .presentationCompactAdaptation(.popover)
                                             .fixedSize(horizontal: false, vertical: true)
                                             .multilineTextAlignment(.center)
-                                    }
+                                    }.background(.gdcgreen2)
                                 }
                             }
                         }
@@ -67,8 +68,8 @@ var body: some View {
                         Text(" Become A Driver")
                             .bold()
                             .padding()
-                            .foregroundColor(.gDbcolor)
-                            .background(Color.gdc2)
+                            .foregroundColor(.white)
+                            .background(Color.gDbcolor)
                             .cornerRadius(10)
                     }
                 

@@ -1,67 +1,13 @@
 //
-//  driverView.swift
-//  Give_Dash
+//  PickUpOrder.swift
+//  GiveDash
 //
-//  Created by Elancio Zeigler on 1/29/24.
+//  Created by Elancio Zeigler on 2/13/24.
 //
 
 import SwiftUI
 
-struct newRegistration: View {
-    @State var carRegistrationName = "Register Vehicle"
-    @State var newName = ""
-    @State var newCarModel = ""
-    @State var newLicensePlate = ""
-    @State var newIDnumber = ""
-    @State var newState = ""
-    @State var newExp = ""
-    @State var newCarColor: Color = .blue
-    
-    var body: some View {
-        Text(carRegistrationName)
-            .bold()
-            .font(.title)
-            .padding(.leading)
-        VStack {
-            
-            Group {
-                TextField("Enter Name", text: $newName)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-                TextField("Enter Vehicle Model", text: $newCarModel)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-                TextField("Enter Plate Number", text: $newLicensePlate)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-                TextField("Enter License Number", text: $newIDnumber)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-                TextField("Enter State", text: $newState)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-                TextField("Enter Expiration", text: $newExp)
-                    .frame(height:0)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                    .padding(.horizontal)
-            }
-        }
-    }
-}
-
-struct driverView: View {
-    @State private var registrationSaved = false
+struct PickUpOrder: View {
     @State private var showPopover: Bool = false
     
     let popoverTexts = [
@@ -70,13 +16,8 @@ struct driverView: View {
         "1 in 8 Americans are estimated to be food insecure.","Food production and distribution systems contribute to environmental degradation, including deforestation, greenhouse gas emissions, and loss of biodiversity, further exacerbating food insecurity in the long term.", "Food insecurity disproportionately affects vulnerable populations, including children, women, the elderly, and marginalized communities.","Economic instability, poverty, conflict, and climate change are among the primary factors contributing to food insecurity."," Food insecurity can lead to malnutrition, which in turn contributes to various health issues, including stunted growth, weakened immune systems, and higher susceptibility to diseases.","Prior to 2024, around 9% of the world's population was estimated to be undernourished, according to the Food and Agriculture Organization (FAO) of the United Nations"
     ]
     
-    
-    func saveRegistration() {
-        registrationSaved = true
-    }
-    
     var body: some View {
-        NavigationView {
+        NavigationView{
             Color(.gdg)
                 .ignoresSafeArea()
                 .overlay(
@@ -92,6 +33,7 @@ struct driverView: View {
                                 Spacer()
                                 
                                 Button(action: {
+                                    // Toggle the visibility of the popover
                                     showPopover.toggle()
                                 }) {
                                     Image(systemName: "info.circle")
@@ -114,35 +56,12 @@ struct driverView: View {
                                 }
                             }
                             .padding()
-                    VStack {
-                        newRegistration()
-                        Button("Save Registration") {
-                            saveRegistration()
                         }
+                    }.navigationBarTitle("Order Drop-Off", displayMode: .inline)
                         .bold()
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.gDbcolor)
-                        .cornerRadius(8)
-                        .padding()
-                        // Navigate back to ContentView if registration is saved
-                        NavigationLink(
-                            destination: PickUpOrder(),
-                            isActive: $registrationSaved,
-                            label: { EmptyView() }
-                        )
-                    }
-                }
-            }
-            .navigationBarTitle("Driver Registration", displayMode: .inline)
-            .bold()
-        )}
+                )}
     }
 }
-
-
-struct driverView_Previews: PreviewProvider {
-    static var previews: some View {
-        driverView()
-    }
+#Preview {
+    PickUpOrder()
 }

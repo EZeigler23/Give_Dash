@@ -46,10 +46,14 @@ struct OrderView: View {
                         VStack{
                             HStack{
                                 Image("GDlogo1")
+                                
                                     .resizable()
                                     .scaledToFit()
+                                
                                     .frame(width: 50, height: 50, alignment: .leading)
+                                
                                     .padding()
+                                
                                 
                                 Spacer()
                                 
@@ -59,7 +63,7 @@ struct OrderView: View {
                                 }) {
                                     Image(systemName: "info.circle")
                                         .font(.largeTitle)
-                                        .foregroundColor(Color(hex:"263F56"))
+                                        .foregroundColor(Color(.gDbcolor))
                                 }
                                 .padding()
                                 .popover(isPresented: $showPopover, arrowEdge: .top) {
@@ -68,10 +72,11 @@ struct OrderView: View {
                                             Text(popoverTexts.randomElement() ?? "") // Selecting a random text
                                                 .bold()
                                                 .padding()
+                                                .background(.gdcgreen2)
                                                 .presentationCompactAdaptation(.popover)
                                                 .fixedSize(horizontal: false, vertical: true)
                                                 .multilineTextAlignment(.center)
-                                        }
+                                        }.background(.gdcgreen2)
                                     }
                                 }
                             }
@@ -87,7 +92,7 @@ struct OrderView: View {
                             HStack{
                                 TextField("Enter location (city or address)", text: $userLocationInput, onCommit: {
                                     updateMapLocation()
-                                })
+                                }).foregroundColor(.white)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .padding()
                                 .multilineTextAlignment(.center)

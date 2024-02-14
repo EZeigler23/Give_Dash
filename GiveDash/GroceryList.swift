@@ -27,7 +27,7 @@ struct GroceryListView: View {
     @State var isConfirmOrderShowing = false
     var body: some View {
         NavigationView {
-            Color(hex:"E2F1D2")
+            Color(.gdg)
                 .ignoresSafeArea()
                 .overlay(
             VStack {
@@ -45,7 +45,7 @@ struct GroceryListView: View {
                                 Text(item.name)
                                     .font(.title3)
                                     .fontWeight(.bold)
-                                    .tint(Color(hex: "263F56"))
+                                    .tint(Color(.gDbcolor))
                                 Stepper(value: $groceries[index].count, in: 0...10) {
                                     Text("Qty: \(groceries[index].count)")
                                 }.background(Color.gdcgreen)

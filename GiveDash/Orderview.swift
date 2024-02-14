@@ -111,7 +111,7 @@ struct OrderView: View {
                             Spacer()
                                 .padding()
                             
-                            NavigationLink(destination: Text("Grocery List View")) {
+                            NavigationLink(destination: GroceryListView()) {
                                 Text("Place Order")
                                     .bold()
                                     .padding()

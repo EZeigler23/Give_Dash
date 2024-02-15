@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GroceryItem: Identifiable {
+struct GroceryItem: Observable, Identifiable {
     let id = UUID()
     let name: String
     var count: Int
@@ -15,7 +15,7 @@ struct GroceryItem: Identifiable {
 
 struct GroceryListView: View {
     
-    @State private var groceries: [GroceryItem] = [
+    @State  var groceries: [GroceryItem] = [
         GroceryItem(name: "Meat", count: 0),
         GroceryItem(name: "Canned Goods", count: 0),
         GroceryItem(name: "Dairy", count: 0),
@@ -23,7 +23,7 @@ struct GroceryListView: View {
         GroceryItem(name: "Grains", count: 0),
         GroceryItem(name: "Vegetables", count: 0)
     ]
-    @State private var showingReceiptPopover = false
+    @State  var showingReceiptPopover = false
     @State var isConfirmOrderShowing = false
     var body: some View {
         NavigationView {
